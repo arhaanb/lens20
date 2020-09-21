@@ -205,14 +205,14 @@ p {
 }
 
 a {
-	color: #1EAEDB;
+	color: #69e;
 }
 
 a:hover {
-	color: #0FA0CE;
+	color:  rgb(57, 99, 173);
 }
 
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+/* .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
 	display: inline-block;
 	height: 38px;
 	padding: 0 30px;
@@ -230,9 +230,9 @@ a:hover {
 	border: 1px solid #bbb;
 	cursor: pointer;
 	box-sizing: border-box;
-}
+} */
 
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+/* .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
 	color: #333;
 	border-color: #888;
 	outline: 0;
@@ -248,7 +248,7 @@ a:hover {
 	color: #FFF;
 	background-color: rgb(57, 99, 173);
 	border-color: rgb(57, 99, 173);
-}
+} */
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
 	height: 38px;
@@ -274,7 +274,7 @@ textarea {
 }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
-	border: 1px solid #33C3F0;
+	border: 1px solid #69e;
 	outline: 0;
 }
 

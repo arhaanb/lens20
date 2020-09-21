@@ -29,10 +29,6 @@ query {
   padding: 0;
 }
 
-.layout {
-  font-family: "inter";
-}
-
 .sidenav {
   height: 100%;
   width: 45vw;

@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+.layout {
+  font-family: "inter";
+}
+
 .flex-center {
 	display: flex;
 	justify-content: center;
@@ -27,8 +31,19 @@
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #222;
+	background: rgba(152, 190, 240, 0.651);
+}
+
+::selection {
+  color: #222;
+  background: rgba(152, 190, 240, 0.651);
+}
+
 input, textarea {
-	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 	font-family: 'inter';
 }
 
@@ -36,17 +51,30 @@ button {
 	font-family: 'inter';
 	text-transform: capitalize;
 	letter-spacing: 0;
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 0.85em;
+	font-weight: 500;
 	background: #69e;
 	transition: 0.3s;
+	padding: 0.5em 1.6em;
+	border-radius: 0.5em;
+	color: #fff;
+	border: solid 1px rgb(89, 136, 223);
 }
 
-.noselect, br, button {
+button:hover {
+	background-color: rgb(68, 122, 214);
+}
+
+.noselect, br, button, select, img, input, textarea {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+label {
+	font-weight: 500;
+	font-size: 0.9em;
 }
