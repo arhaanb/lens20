@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+::-webkit-scrollbar-track {
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+	/* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+	background-color: #F5F5F5;
+	/* border-radius: 10px; */
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
+}
+
+input, textarea {
+	width: 100%;
+	font-family: 'inter';
+}
+
+button {
+	font-family: 'inter';
+	text-transform: capitalize;
+	letter-spacing: 0;
+	font-size: 1em;
+	font-weight: 300;
+	background: #69e;
+	transition: 0.3s;
+}
+
+.noselect, br, button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

@@ -28,6 +28,7 @@ query {
   margin: 0;
   padding: 0;
 }
+
 .layout {
   font-family: "inter";
 }
