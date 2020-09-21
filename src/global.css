@@ -1,6 +1,13 @@
 @font-face {
-	font-family: "yuh";
-	src: url("./inter.ttf");
+	font-family: "europa";
+	src: url("./europa-bold.ttf");
+	/* font-weight: normal; */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "europa-regular";
+	src: url("./europa-regular.ttf");
 	/* font-weight: normal; */
 	font-style: normal;
 }
@@ -11,7 +18,8 @@
 }
 
 .layout {
-	font-family: "yuh";
+	font-family: "europa-regular";
+	color: #222;
 }
 
 .flex-center {
@@ -49,28 +57,44 @@
 	background: rgba(152, 190, 240, 0.651);
 }
 
-input, textarea {
+input, textarea, select, option {
 	min-width: 100%;
 	max-width: 100%;
-	font-family: 'yuh';
+	font-family: 'europa-regular';
 }
 
 button {
-	font-family: 'yuh';
-	text-transform: capitalize;
-	letter-spacing: 0;
-	font-size: 0.85em;
-	font-weight: 500;
-	background: #69e;
-	transition: 0.3s;
-	padding: 0.5em 1.6em;
+	font-family: 'europa';
+	/* letter-spacing: 0.1em;
+	text-transform: uppercase; */
+	/* font-weight: 600; */
+	/* font-size: 0.75em; */
+	/* padding: 0.5em 1.3em;
 	border-radius: 0.5em;
+	color: #222;
+	border: solid 1px rgb(83, 83, 83);
+	background-color: rgb(236, 236, 236); */
+	/* -webkit-box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6);
+	-moz-box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6);
+	box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6); */
+	box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
+	background-color: #6699ee;
 	color: #fff;
-	border: solid 1px rgb(89, 136, 223);
+	border: none;
+	transform: translateY(-4px);
+	transition: 0.5s;
+	/* box-shadow: 30px 30px 59px #cccccc, -30px -30px 59px #ffffff; */
 }
 
 button:hover {
-	background-color: rgb(68, 122, 214);
+	/* background: #69e; */
+	/* background-color: #69e;
+	border: solid 1px rgb(48, 92, 173);
+	color: #fff; */
+	transform: translateY(0px);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .noselect, br, button, select, img, input, textarea {
@@ -83,6 +107,7 @@ button:hover {
 }
 
 label {
-	font-weight: 500;
+	/* font-weight: 500; */
 	font-size: 0.9em;
+	font-family: 'europa';
 }

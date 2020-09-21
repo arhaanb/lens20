@@ -70,7 +70,7 @@ query {
   }
   .main {
     margin: 0;
-    margin-top: 80vh;
+    margin-top: 70vh;
     background-color: #fff;
   }
 }

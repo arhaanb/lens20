@@ -1,10 +1,6 @@
 <template>
   <Layout>
     <div class="container">
-      <!-- <h2 class="title">
-        MINET
-        <span class="lens">Lens</span>
-      </h2>-->
       <div class="mbtop"></div>
       <img src="../lens.svg" alt class="lenslog" />
       <div class="mbbtm"></div>
@@ -43,38 +39,42 @@
           </div>
         </div>
         <!-- <br /> -->
-        <label
-          for
-        >What kind of gear do you use? (Camera type and model, lenses, flashes, filters, any other photography/film-making related equipment that you possess)</label>
-        <textarea name id>i think this question super dumb ngl</textarea>
+        <div class="longq">
+          <label
+            for
+          >What kind of gear do you use? (Camera type and model, lenses, flashes, filters, any other photography/film-making related equipment that you possess)</label>
+          <textarea name id>i think this question super dumb ngl</textarea>
 
-        <label
-          for
-        >What are the qualities of an ideal photographer/cinematographer/director? (only fill for the post you are applying for)</label>
-        <textarea name id></textarea>
+          <label
+            for
+          >What are the qualities of an ideal photographer/cinematographer/director? (only fill for the post you are applying for)</label>
+          <textarea name id></textarea>
 
-        <label
-          for
-        >What about you makes you stand out and perhaps better than the other contenders applying for the same post?</label>
-        <textarea name id></textarea>
+          <label
+            for
+          >What about you makes you stand out and perhaps better than the other contenders applying for the same post?</label>
+          <textarea name id></textarea>
 
-        <label
-          for
-        >What are the qualities of an ideal photographer/cinematographer/director? (only fill for the post you are applying for)</label>
-        <textarea name id></textarea>
+          <label
+            for
+          >What are the qualities of an ideal photographer/cinematographer/director? (only fill for the post you are applying for)</label>
+          <textarea name id></textarea>
 
-        <label for>How would you describe your style of work?</label>
-        <textarea name id></textarea>
+          <label for>How would you describe your style of work?</label>
+          <textarea name id></textarea>
 
-        <label
-          for
-        >Please compile your portfolio on google drive and share the link below. Include as many original creative works as possible.</label>
-        <textarea name id></textarea>
+          <label
+            for
+          >Please compile your portfolio on google drive and share the link below. Include as many original creative works as possible.</label>
+          <textarea name id></textarea>
 
-        <label for>Lastly, do you have any creative work experience? If yes, please mention.</label>
-        <textarea name id></textarea>
+          <label for>Lastly, do you have any creative work experience? If yes, please mention.</label>
+          <textarea name id></textarea>
+        </div>
 
-        <button class="button-primary u-pull-right">Submit</button>
+        <div class="anti-center">
+          <button class="button-primary">Submit</button>
+        </div>
       </form>
     </div>
   </Layout>
@@ -102,22 +102,13 @@ export default {
   margin-bottom: 0;
 }
 
-.lens {
-  font-family: "inter";
-  font-weight: 200;
-  font-size: 0.7em;
-  letter-spacing: 0.1em;
-  color: #000;
-  margin-left: 0.5em;
-  margin-top: 0.1em;
-}
-
 .sub {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgb(63, 63, 63);
   font-size: 1.2em;
-  font-weight: 400;
+  font-family: "europa";
+  // font-weight: 400;
 }
 
 .mbtop {
@@ -134,5 +125,25 @@ export default {
 
 .row {
   margin-bottom: 1em;
+}
+
+button {
+  margin-top: 1em;
+}
+
+.longq textarea {
+		margin-top: 0.5em;
+}
+
+@media (max-width: 750px) {
+  .mbtop {
+    margin-top: 2em;
+  }
+  .anti-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 </style>
