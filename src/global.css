@@ -1,10 +1,17 @@
+@font-face {
+	font-family: "yuh";
+	src: url("./inter.ttf");
+	/* font-weight: normal; */
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 .layout {
-  font-family: "inter";
+	font-family: "yuh";
 }
 
 .flex-center {
@@ -31,24 +38,25 @@
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: #222;
+::-moz-selection {
+	/* Code for Firefox */
+	color: #222;
 	background: rgba(152, 190, 240, 0.651);
 }
 
 ::selection {
-  color: #222;
-  background: rgba(152, 190, 240, 0.651);
+	color: #222;
+	background: rgba(152, 190, 240, 0.651);
 }
 
 input, textarea {
 	min-width: 100%;
 	max-width: 100%;
-	font-family: 'inter';
+	font-family: 'yuh';
 }
 
 button {
-	font-family: 'inter';
+	font-family: 'yuh';
 	text-transform: capitalize;
 	letter-spacing: 0;
 	font-size: 0.85em;
