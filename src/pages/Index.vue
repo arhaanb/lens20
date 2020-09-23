@@ -17,6 +17,7 @@
           <div class="one-half column">
             <label>Select Class</label>
             <select required class="u-full-width">
+              <option value="0" selected disabled>Class</option>
               <option value="6">6</option>
               <option value="7">7</option>
               <option value="8">8</option>
@@ -29,6 +30,7 @@
           <div class="one-half column">
             <label>Select Section</label>
             <select required class="u-full-width">
+              <option value="0" selected disabled>Section</option>
               <option value="A">A</option>
               <option value="B">B</option>
               <option value="C">C</option>
@@ -83,7 +85,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Home",
+    title: "Recruitments",
   },
 };
 </script>

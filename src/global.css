@@ -17,6 +17,22 @@
 	padding: 0;
 }
 
+.logo {
+	position: fixed;
+	width: 2em;
+	bottom: 2em;
+	left: 2em;
+}
+
+@media (max-width: 750px) {
+	.logo {
+		/* position: absolute; */
+		top: 2.5em;
+		right: 0;
+		/* z-index: -1; */
+	}
+}
+
 .layout {
 	font-family: "europa-regular";
 	color: #222;
@@ -47,7 +63,16 @@
 }
 
 ::-moz-selection {
-	/* Code for Firefox */
+	color: #12477c;
+	background: rgba(80, 142, 235, 0.281);
+}
+
+::selection {
+	color: #2167ac;
+	background: rgba(80, 142, 235, 0.281);
+}
+
+/* ::-moz-selection {
 	color: #222;
 	background: rgba(152, 190, 240, 0.651);
 }
@@ -55,7 +80,7 @@
 ::selection {
 	color: #222;
 	background: rgba(152, 190, 240, 0.651);
-}
+} */
 
 input, textarea, select, option {
 	min-width: 100%;
