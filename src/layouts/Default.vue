@@ -1,13 +1,13 @@
 <template>
   <div class="layout">
     <div class="sidenav">
+      <g-image src="../favicon.svg" class="logo"></g-image>
       <!-- <div class="container">
         <div class="promo">
           <h3>MINET Lens</h3>
           <p>Recruitments</p>
         </div>
       </div> -->
-			<g-image src="../favicon.svg" class="logo"></g-image>
     </div>
 
     <div class="main">
@@ -65,6 +65,7 @@ query {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1.5em;
+    // margin: 1.5em 1em 0 1em;
     .promo {
       height: auto;
     }
@@ -75,4 +76,11 @@ query {
     background-color: #fff;
   }
 }
+
+// @media (max-width: 400px) {
+//   .sidenav {
+//     // width: 90%;
+//     margin-top: 0;
+//   }
+// }
 </style>
