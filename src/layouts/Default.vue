@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="sidenav">
-      <g-image src="../favicon.svg" class="logo" draggable="false" />
+      <img src="../lenswhite.svg" class="logo" draggable="false" />
       <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
       <!-- <div class="container">
         <div class="promo">
