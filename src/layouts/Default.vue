@@ -1,7 +1,8 @@
 <template>
   <div class="layout">
     <div class="sidenav">
-      <g-image src="../favicon.svg" class="logo"></g-image>
+      <g-image src="../favicon.svg" class="logo" draggable="false" />
+      <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
       <!-- <div class="container">
         <div class="promo">
           <h3>MINET Lens</h3>
@@ -37,12 +38,12 @@ query {
   z-index: 1;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  background-image: url("../darsh.jpg");
-  background-size: cover;
-  background-position: center;
+  overflow-y: hidden;
+  // background-image: url("../darsh.jpg");
+  // background-size: cover;
+  // background-position: center;
   .promo {
-    height: 80vh;
+    // height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,12 @@ query {
 .main {
   margin-left: 42vw; /* Same as the width of the sidenav */
   padding: 2em 0;
+}
+
+.sideimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 750px) {
