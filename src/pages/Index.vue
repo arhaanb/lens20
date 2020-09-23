@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <div class="mbtop"></div>
-      <img src="../lens.svg" alt class="lenslog" />
+      <img src="../lens.svg" alt class="lenslog" draggable="false" />
       <div class="mbbtm"></div>
       <h5 class="sub">Recruitments</h5>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste harum quidem cumque reiciendis quae minima consequuntur tenetur at quam corrupti nihil, praesentium possimus? Quaerat consequatur asperiores eum nostrum? Sunt, quisquam.</p>
