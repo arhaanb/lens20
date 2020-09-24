@@ -119,7 +119,7 @@ export default {
     title: "Recruitments",
   },
   data: () => ({
-    submitted: true,
+    submitted: false,
   }),
 };
 </script>
