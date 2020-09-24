@@ -14,7 +14,7 @@
           your application shortly.
         </h5>
         <a href="//minet.co">
-          <button class="cool button-primary">Team MINET</button>
+          <button class="cool minetbtn button-primary">Team MINET</button>
         </a>
 				<div class="successmargin"></div>
       </div>
@@ -136,6 +136,10 @@ export default {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0;
+}
+
+.minetbtn {
+	margin-top: 2.5em;
 }
 
 .sub {
