@@ -55,7 +55,7 @@ a {
 
 @media (max-width: 750px) {
   .mbtop {
-    margin-top: 2.0em;
+    margin-top: 2em;
   }
   .anti-center {
     display: flex;
