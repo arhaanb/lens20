@@ -2,9 +2,9 @@
   <div class="layout">
     <div class="sidenav">
       <img src="../favicon.svg" class="logo" draggable="false" />
-      <div class="flex-center">
+      <!-- <div class="flex-center"> -->
         <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
-      </div>
+      <!-- </div> -->
       <!-- <div class="container">
         <div class="promo">
           <h3>MINET Lens</h3>
@@ -74,7 +74,11 @@ query {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1.5em;
-    // margin: 1.5em 1em 0 1em;
+		// margin: 1.5em 1em 0 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
     .promo {
       height: auto;
     }
