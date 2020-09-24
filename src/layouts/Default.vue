@@ -1,8 +1,10 @@
 <template>
   <div class="layout">
     <div class="sidenav">
-      <img src="../lenswhite.svg" class="logo" draggable="false" />
-      <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
+      <img src="../favicon.svg" class="logo" draggable="false" />
+      <div class="flex-center">
+        <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
+      </div>
       <!-- <div class="container">
         <div class="promo">
           <h3>MINET Lens</h3>
@@ -82,12 +84,9 @@ query {
     margin-top: 70vh;
     background-color: #fff;
   }
+  .sideimg {
+    width: 90%;
+    // margin-top: 0;
+  }
 }
-
-// @media (max-width: 400px) {
-//   .sidenav {
-//     // width: 90%;
-//     margin-top: 0;
-//   }
-// }
 </style>

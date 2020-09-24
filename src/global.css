@@ -12,6 +12,10 @@
 	font-style: normal;
 }
 
+.semi {
+	font-family: 'europa';
+}
+
 * {
 	margin: 0;
 	padding: 0;
