@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="sidenav">
-      <img src="../favicon.svg" class="logo" draggable="false" />
+      <img src="../favicon.svg" alt="MINET Lens Logo" class="logo" draggable="false" />
       <!-- <div class="flex-center"> -->
         <g-image src="../darsh.jpg" alt="Bird by Darsh Vohra" class="sideimg" draggable="false" />
       <!-- </div> -->
