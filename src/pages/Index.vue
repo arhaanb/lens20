@@ -124,7 +124,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .title {
   font-family: "virgo 01";
   color: #6699ee;
