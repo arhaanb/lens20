@@ -17,7 +17,7 @@
 }
 
 .semi {
-	font-family: 'europa';
+	font-family: 'europa', 'sans-serif';
 }
 
 * {
@@ -42,7 +42,7 @@
 }
 
 .layout {
-	font-family: "europa-regular";
+	font-family: "europa-regular", 'sans-serif';
 	color: #222;
 }
 
@@ -93,11 +93,11 @@
 input, textarea, select, option {
 	min-width: 100%;
 	max-width: 100%;
-	font-family: 'europa-regular';
+	font-family: 'europa-regular', 'sans-serif';
 }
 
 button {
-	font-family: 'europa';
+	font-family: 'europa', 'sans-serif';
 	/* letter-spacing: 0.1em;
 	text-transform: uppercase; */
 	/* font-weight: 600; */
@@ -111,7 +111,7 @@ button {
 	-moz-box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6);
 	box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6); */
 	box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
-	background-color: #6699ee;
+	background-color: #4f85e4 !important;
 	color: #fff;
 	border: none;
 	transform: translateY(-4px);
@@ -124,6 +124,7 @@ button:hover {
 	/* background-color: #69e;
 	border: solid 1px rgb(48, 92, 173);
 	color: #fff; */
+	background-color: rgb(39, 90, 177) !important;
 	transform: translateY(0px);
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -142,5 +143,5 @@ button:hover {
 label {
 	/* font-weight: 500; */
 	font-size: 0.9em;
-	font-family: 'europa';
+	font-family: 'europa', 'sans-serif';
 }

@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <div class="mbtop"></div>
-      <img src="../lens.svg" alt class="lenslog" draggable="false" />
+      <img src="../lens.svg" alt="Lens Logo" class="lenslog" draggable="false" />
       <div class="mbbtm"></div>
       <h5 class="sub">Recruitments</h5>
       <div v-if="submitted">

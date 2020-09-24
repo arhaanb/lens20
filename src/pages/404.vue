@@ -2,7 +2,7 @@
   <Layout>
     <div class="container">
       <div class="mbtop"></div>
-      <img src="../lens.svg" alt class="lenslog" draggable="false" />
+      <img src="../lens.svg" alt="MINET Lens" class="lenslog" draggable="false" />
       <div class="mbbtm"></div>
       <h1 class="semi zero four">404</h1>
       <h5 class="desc">

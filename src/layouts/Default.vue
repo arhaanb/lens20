@@ -3,7 +3,7 @@
     <div class="sidenav">
       <img src="../favicon.svg" class="logo" draggable="false" />
       <!-- <div class="flex-center"> -->
-        <g-image src="../darsh.jpg" class="sideimg" draggable="false" />
+        <g-image src="../darsh.jpg" alt="Bird by Darsh Vohra" class="sideimg" draggable="false" />
       <!-- </div> -->
       <!-- <div class="container">
         <div class="promo">
