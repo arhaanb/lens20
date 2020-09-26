@@ -31,12 +31,17 @@
           eum nostrum? Sunt, quisquam.
         </p>
         <form action="#">
-          <label for>Name</label>
-          <input type="text" placeholder="Name" />
-          <label for>Email</label>
-          <input type="text" placeholder="Email" />
-          <label for>Phone Number</label>
-          <input type="text" placeholder="Phone Number" />
+          <label>Name</label>
+          <input type="text" placeholder="Name" v-model="name" required />
+          <label>Email</label>
+          <input type="email" placeholder="Email" v-model="email" required />
+          <label>Phone Number</label>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            v-model="pnumber"
+            required
+          />
           <div class="row">
             <div class="one-half column">
               <label>Select Class</label>
@@ -65,35 +70,38 @@
             </div>
           </div>
 
-          <br />
+          <div class="check">
+            <h6 class="semi applying">What are you applying for?</h6>
+            <div class="row">
+              <!-- <h5>{{ radio }}</h5> -->
+              <div class="six columns">
+                <div class="xboxbox">
+                  <input
+                    v-model="radio.photography"
+                    type="checkbox"
+                    id="photography"
+                    name="field"
+                    value="Photography/Cinematography"
+                  />
+                  <label for="photography">Photography/Cinematography</label>
+                </div>
 
-          <h6 class="semi applying">What are you applying for?</h6>
-          <div class="row">
-            <!-- <h5>{{ radio }}</h5> -->
-            <div class="radio six columns">
-              <input
-                v-model="radio"
-                type="radio"
-                id="photography"
-                name="field"
-                value="Photography/Cinematography"
-              />
-              <label for="photography">Photography/Cinematography</label>
-            </div>
-
-            <div class="radio six columns">
-              <input
-                v-model="radio"
-                type="radio"
-                id="direction"
-                name="field"
-                value="Creative Direction and Scripting"
-              />
-              <label for="direction">Creative Direction and Scripting</label>
+                <div class="xboxbox">
+                  <input
+                    v-model="radio.direction"
+                    type="checkbox"
+                    id="direction"
+                    name="field"
+                    value="Creative Direction and Scripting"
+                  />
+                  <label for="direction"
+                    >Creative Direction and Scripting</label
+                  >
+                </div>
+              </div>
+              <div class="u-cf"></div>
             </div>
           </div>
-
-          <br />
 
           <div class="longq">
             <!-- <label for
@@ -110,33 +118,33 @@
             >
             <textarea name id></textarea> -->
 
-            <label for
-              >What about you makes you stand out and perhaps better than the
-              other contenders applying for the same post?</label
-            >
-            <textarea name id></textarea>
+            <label>
+              What about you makes you stand out and perhaps better than the
+              other contenders applying for the same post?
+            </label>
+            <textarea v-model="q1"></textarea>
 
-            <label for
-              >What are the qualities of an ideal
+            <label>
+              What are the qualities of an ideal
               photographer/cinematographer/director? (only fill for the post you
-              are applying for)</label
-            >
-            <textarea name id></textarea>
+              are applying for)
+            </label>
+            <textarea v-model="q2"></textarea>
 
-            <label for>How would you describe your style of work?</label>
-            <textarea name id></textarea>
+            <label>How would you describe your style of work?</label>
+            <textarea v-model="q3"></textarea>
 
-            <label for
-              >Please compile your portfolio on google drive and share the link
-              below. Include as many original creative works as possible.</label
-            >
-            <textarea name id></textarea>
+            <label>
+              Please compile your portfolio on google drive and share the link
+              below. Include as many original creative works as possible.
+            </label>
+            <textarea v-model="q4"></textarea>
 
-            <label for
-              >Lastly, do you have any creative work experience? If yes, please
-              mention.</label
-            >
-            <textarea name id></textarea>
+            <label>
+              Lastly, do you have any creative work experience? If yes, please
+              mention.
+            </label>
+            <textarea v-model="q5"></textarea>
           </div>
 
           <div class="anti-center">
@@ -155,17 +163,41 @@ export default {
   },
   data: () => ({
     submitted: false,
-    radio: "",
+    radio: {
+      photography: "",
+      direction: "",
+    },
+    name: "",
+    email: "",
+    pnumber: "",
+    q1: "",
+    q2: "",
+    q3: "",
+    q4: "",
+    q5: "",
   }),
 };
 </script>
 
 <style lang="scss">
 .applying {
-	margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.radio {
+// .check {
+//   input {
+//     margin-right: 0.5em;
+//   }
+//   label {
+//     margin-bottom: -3em;
+//   }
+// }
+
+.check {
+  margin: 2em 0;
+}
+
+.xboxbox {
   input {
     margin-right: 0.5em;
   }
@@ -174,6 +206,7 @@ export default {
   align-items: center;
   label {
     margin-top: -1.1em;
+    font-family: "europa-regular";
   }
 }
 
