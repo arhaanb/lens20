@@ -2,7 +2,12 @@
   <Layout>
     <div class="container">
       <div class="mbtop"></div>
-      <img src="../lens.svg" alt="Lens Logo" class="lenslog" draggable="false" />
+      <img
+        src="../lens.svg"
+        alt="Lens Logo"
+        class="lenslog"
+        draggable="false"
+      />
       <div class="mbbtm"></div>
       <h5 class="sub">Recruitments</h5>
       <div v-if="submitted">
@@ -16,7 +21,7 @@
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
         </a>
-				<div class="successmargin"></div>
+        <div class="successmargin"></div>
       </div>
       <div v-if="!submitted">
         <p>
@@ -59,14 +64,44 @@
               </select>
             </div>
           </div>
-          <!-- <br /> -->
+
+          <br />
+
+          <h6 class="semi applying">What are you applying for?</h6>
+          <div class="row">
+            <!-- <h5>{{ radio }}</h5> -->
+            <div class="radio six columns">
+              <input
+                v-model="radio"
+                type="radio"
+                id="photography"
+                name="field"
+                value="Photography/Cinematography"
+              />
+              <label for="photography">Photography/Cinematography</label>
+            </div>
+
+            <div class="radio six columns">
+              <input
+                v-model="radio"
+                type="radio"
+                id="direction"
+                name="field"
+                value="Creative Direction and Scripting"
+              />
+              <label for="direction">Creative Direction and Scripting</label>
+            </div>
+          </div>
+
+          <br />
+
           <div class="longq">
-            <label for
+            <!-- <label for
               >What kind of gear do you use? (Camera type and model, lenses,
               flashes, filters, any other photography/film-making related
               equipment that you possess)</label
             >
-            <textarea name id>i think this question super dumb ngl</textarea>
+            <textarea name id>i think this question super dumb ngl</textarea> -->
 
             <label for
               >What are the qualities of an ideal
@@ -120,11 +155,28 @@ export default {
   },
   data: () => ({
     submitted: false,
+    radio: "",
   }),
 };
 </script>
 
 <style lang="scss">
+.applying {
+	margin-bottom: 0.5em;
+}
+
+.radio {
+  input {
+    margin-right: 0.5em;
+  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  label {
+    margin-top: -1.1em;
+  }
+}
+
 .title {
   font-family: "virgo 01";
   color: #6699ee;
@@ -139,7 +191,7 @@ export default {
 }
 
 .minetbtn {
-	margin-top: 2.5em;
+  margin-top: 2.5em;
 }
 
 .sub {
@@ -184,9 +236,9 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-	}
-	.successmargin {
-		height: 50vh;
-	}
+  }
+  .successmargin {
+    height: 50vh;
+  }
 }
 </style>

@@ -92,7 +92,7 @@
 	background: rgba(152, 190, 240, 0.651);
 } */
 
-input, textarea, select, option {
+input:not([type="radio"]), textarea, select, option {
 	min-width: 100%;
 	max-width: 100%;
 	font-family: 'europa-regular', 'sans-serif';
