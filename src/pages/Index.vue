@@ -103,12 +103,12 @@
             >
             <textarea name id>i think this question super dumb ngl</textarea> -->
 
-            <label for
+            <!-- <label for
               >What are the qualities of an ideal
               photographer/cinematographer/director? (only fill for the post you
               are applying for)</label
             >
-            <textarea name id></textarea>
+            <textarea name id></textarea> -->
 
             <label for
               >What about you makes you stand out and perhaps better than the
