@@ -37,10 +37,6 @@ export default {
   margin-top: 0.3em;
 }
 
-.desc {
-  font-size: 1.2em;
-}
-
 .mbbtm {
   margin-bottom: 0.5em;
 }

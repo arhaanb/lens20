@@ -18,6 +18,10 @@
 	margin: 0;
 }
 
+.desc {
+	font-size: 1.2em;
+}
+
 .semi {
 	font-family: 'europa', 'sans-serif';
 }
@@ -126,6 +130,14 @@ button:hover {
 	/* background-color: #69e;
 	border: solid 1px rgb(48, 92, 173);
 	color: #fff; */
+	background-color: rgb(39, 90, 177) !important;
+	transform: translateY(0px);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+button:disabled {
 	background-color: rgb(39, 90, 177) !important;
 	transform: translateY(0px);
 	-webkit-box-shadow: none;
