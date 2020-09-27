@@ -92,7 +92,7 @@
         </div>
 
         <div class="check">
-          <h6 class="semi applying">What are you applying for?</h6>
+          <h6 class="semi applying">What field are you applying for?</h6>
           <div class="row">
             <!-- <h5>{{ radio }}</h5> -->
             <div class="six columns">
