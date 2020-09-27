@@ -159,11 +159,22 @@
           <textarea v-model="q5" placeholder="Answer"></textarea>
         </div>
 
+        <h6 v-if="classerror" class="semi red zero">
+          Please choose your class
+        </h6>
+        <h6 v-if="fielderror" class="semi red" style="margin-bottom: 0.5em">
+          Please pick a field
+        </h6>
         <div class="anti-center">
           <button class="button-primary" :disabled="loading">
             <span v-if="!loading">Submit</span>
             <span v-if="loading">Loading</span>
           </button>
+					<p v-if="errors.length">
+							<ul>
+								<li v-for="error in errors" :key="error">{{ error }}</li>
+							</ul>
+					</p>
         </div>
       </form>
     </div>
@@ -177,9 +188,12 @@ export default {
     title: "Recruitments",
   },
   data: () => ({
+    errors: [],
     over: false,
     submitted: false,
     loading: false,
+    classerror: false,
+    fielderror: false,
     name: "",
     email: "",
     phone: "",
@@ -199,31 +213,48 @@ export default {
     async addUser(e) {
       e.preventDefault();
       this.loading = true;
+      this.errors = [];
+
+      if (this.errors.length > 0) {
+        this.loading = false;
+      }
+
       if (this.class1 == 0 || this.section == 0) {
-        this.classerror = "Please choose your class";
+        // this.classerror = true;
+        this.errors.push("Please select your class.");
+        this.loading = false;
+      }
+
+      if (this.radio.photography == false && this.radio.direction == false) {
+        // this.fielderror = true;
+        this.errors.push("Please choose a field.");
         this.loading = false;
       } else {
-        await axios
-          .post("https://lensapi.arhaanb.co/lens", {
-            name: this.name,
-            email: this.email,
-            phone: this.phone,
-            class: this.class1,
-            section: this.section,
-            field: this.radio,
-            q1: this.q1,
-            q2: this.q2,
-            q3: this.q3,
-            q4: this.q4,
-            q5: this.q5,
-          })
-          .then((response) => {
-            const data = response.data;
-            // console.log(data);
-            this.msg = data.msg;
-          });
-        this.loading = false;
-        this.submitted = true;
+        if (this.errors.length > 0) {
+          this.loading = false;
+        } else {
+          await axios
+            .post("https://lensapi.arhaanb.co/lens", {
+              name: this.name,
+              email: this.email,
+              phone: this.phone,
+              class: this.class1,
+              section: this.section,
+              field: this.radio,
+              q1: this.q1,
+              q2: this.q2,
+              q3: this.q3,
+              q4: this.q4,
+              q5: this.q5,
+            })
+            .then((response) => {
+              const data = response.data;
+              // console.log(data);
+              this.msg = data.msg;
+            });
+          this.loading = false;
+          this.submitted = true;
+        }
       }
     },
   },
@@ -233,6 +264,10 @@ export default {
 <style lang="scss">
 .applying {
   margin-bottom: 0.5em;
+}
+
+.red {
+  color: rgb(235, 68, 68);
 }
 
 // .check {
