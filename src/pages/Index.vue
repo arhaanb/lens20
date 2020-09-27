@@ -44,10 +44,12 @@
       </div>
       <form v-if="!submitted && !over" @submit="addUser">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste harum
-          quidem cumque reiciendis quae minima consequuntur tenetur at quam
-          corrupti nihil, praesentium possimus? Quaerat consequatur asperiores
-          eum nostrum? Sunt, quisquam.
+          MINET Lens is The Mother's International School's photography club.
+          Fill out the form if you are interested in joining. If you have any
+          queries, email us at
+          <a href="mailto:minet@themis.in" target="_blank">minet@themis.in</a>,
+          or drop us a message on our instagram account
+          <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
         </p>
         <label>Name</label>
         <input type="text" placeholder="Name" v-model="name" required />
@@ -168,16 +170,18 @@
         <h6 v-if="fielderror" class="semi red" style="margin-bottom: 0.5em">
           Please pick a field
         </h6>
+        <div v-if="errors.length">
+          <ul class="zero" style="margin-bottom: 0.5em">
+            <li class="zero red" v-for="error in errors" :key="error">
+              {{ error }}
+            </li>
+          </ul>
+        </div>
         <div class="anti-center">
           <button class="button-primary" :disabled="loading">
             <span v-if="!loading">Submit</span>
             <span v-if="loading">Loading</span>
           </button>
-					<p v-if="errors.length">
-							<ul>
-								<li v-for="error in errors" :key="error">{{ error }}</li>
-							</ul>
-					</p>
         </div>
       </form>
     </div>
