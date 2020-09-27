@@ -30,9 +30,12 @@
         <h1 class="semi" style="margin: 1em 0 0.2em 0">
           Let's Make Beautiful Pictures.
         </h1>
-        <h5>
+        <h5 class="desc">
           Thank you for applying to MINET Lens. We will contact you regarding
-          your application shortly.
+          your application shortly. If you have any queries, email us at
+          <a href="mailto:minet@themis.in" target="_blank">minet@themis.in</a>,
+          or drop us a message on our instagram account
+          <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
         </h5>
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
