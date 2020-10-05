@@ -1,1 +1,1 @@
-<img src="./readme/title.png" alt="MINET Lens Recruitments" width="50%" />
+<img src="./readme/title.png" alt="MINET Lens Recruitments" width="30%" />
