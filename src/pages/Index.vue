@@ -3,7 +3,7 @@
     <div class="container">
       <div class="mbtop"></div>
       <img
-        src="../lens.svg"
+        src="../assets/img/lens.svg"
         alt="Lens Logo"
         class="lenslog"
         draggable="false"

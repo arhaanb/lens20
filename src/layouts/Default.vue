@@ -1,16 +1,19 @@
 <template>
   <div class="layout">
     <div class="sidenav">
-      <img src="../favicon.svg" alt="MINET Lens Logo" class="logo" draggable="false" />
-      <!-- <div class="flex-center"> -->
-        <g-image src="../darsh.jpg" alt="Bird by Darsh Vohra" class="sideimg" draggable="false" />
-      <!-- </div> -->
-      <!-- <div class="container">
-        <div class="promo">
-          <h3>MINET Lens</h3>
-          <p>Recruitments</p>
-        </div>
-      </div> -->
+      <img
+        src="../assets/img/favicon.svg"
+        alt="MINET Lens Logo"
+        class="logo"
+        draggable="false"
+      />
+
+      <g-image
+        src="../assets/img/darsh.jpg"
+        alt="Bird by Darsh Vohra"
+        class="sideimg"
+        draggable="false"
+      />
     </div>
 
     <div class="main">
@@ -41,22 +44,17 @@ query {
   top: 0;
   left: 0;
   overflow-y: hidden;
-  // background-image: url("../darsh.jpg");
-  // background-size: cover;
-  // background-position: center;
   .promo {
-    // height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // background-color: rgba(0, 0, 0, 0.637);
     color: #fff;
   }
 }
 
 .main {
-  margin-left: 42vw; /* Same as the width of the sidenav */
+  margin-left: 42vw;
   padding: 2em 0;
 }
 
@@ -74,11 +72,10 @@ query {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1.5em;
-		// margin: 1.5em 1em 0 1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .promo {
       height: auto;
     }
@@ -90,7 +87,6 @@ query {
   }
   .sideimg {
     width: 90%;
-    // margin-top: 0;
   }
 }
 </style>

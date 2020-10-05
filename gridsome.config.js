@@ -5,11 +5,11 @@ module.exports = {
 	titleTemplate: '%s | MINET Lens',
 	icon: {
 		favicon: {
-			src: './src/favicon.svg',
+			src: './src/assets/img/favicon.svg',
 			sizes: [16, 32, 96]
 		},
 		touchicon: {
-			src: './src/favicon.svg',
+			src: './src/assets/img/favicon.svg',
 			sizes: [76, 152, 120, 167],
 			precomposed: true
 		}

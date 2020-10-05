@@ -17,6 +17,6 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 
 <br>
 
-[<img src="./readme/madewithlove.png" alt="Made with love by Arhaan Bahadur" width="175em" />](https://arhaanb.co)
+[<img src="./readme/minetmade.png" alt="Made with love by Arhaan Bahadur" width="175em" />](https://arhaanb.co)
 
-[<img src="./readme/minet.png" alt="Team MINET" width="80em" />](https://minet.co)
+<!-- [<img src="./readme/minet.png" alt="Team MINET" width="80em" />](https://minet.co) -->

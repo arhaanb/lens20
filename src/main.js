@@ -2,8 +2,8 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import './skeleton.css'
-import './global.css'
+import './assets/css/skeleton.css'
+import './assets/css/global.css'
 
 export default function (Vue, { router, head, isClient }) {
 	head.meta.push({
