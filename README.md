@@ -10,7 +10,7 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 - ``` yarn ```
 - ``` yarn develop ```
 - The server will start on [localhost:8080](http://localhost:8080)
-- Before deploying your application, remember to change your ```pathPrefix``` in ```gridsome.config.js``` to the directory you are deploying to (eg: '/lens' or '/').
+- Before deploying the application, remember to change the ```pathPrefix``` in ```gridsome.config.js``` to the directory you are deploying to (eg: '/lens' or '/').
 
 ### Credits
 - Picture by [Darsh Vohra](https://instagram.com/darsh_vohra)
