@@ -1,5 +1,4 @@
 [<img src="./readme/title.png" alt="MINET Lens Recruitments" width="200em" />](https://minet.co/lens)
-<hr>
 
 The official Photography and AV department of The Mother's International School. MINET Lens strives to be a place where people come together to produce art in the form of photography and videography. Fill out the form if you are interested in joining. If you have any queries, email us at [minet@themis.in](mailto:minet@themis.in), or drop us a message on our Instagram account [@minetlens](https://instagram.com/minetlens).
 
