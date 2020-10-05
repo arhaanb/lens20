@@ -14,15 +14,5 @@ module.exports = {
 			sizes: [76, 152, 120, 167],
 			precomposed: true
 		}
-	},
-	css: {
-		loaderOptions: {
-			scss: {
-			}
-		}
-	},
-	devServer: {
-		host: '0.0.0.0',
-		port: 8080
 	}
 }
