@@ -1,4 +1,4 @@
-[<img src="./readme/title.png" alt="MINET Lens Recruitments" width="50%" />](https://minet.co/lens)
+[<img src="./readme/title.png" alt="MINET Lens Recruitments" width="30%" />](https://minet.co/lens)
 <img src="./readme/line.png" alt="line lol" width="100%" />
 
 The official Photography and AV department of The Mother's International School. MINET Lens strives to be a place where people come together to produce art in the form of photography and videography. Fill out the form if you are interested in joining. If you have any queries, email us at [minet@themis.in](mailto:minet@themis.in), or drop us a message on our Instagram account [@minetlens](https://instagram.com/minetlens).
@@ -17,6 +17,6 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 
 <br>
 
-[<img src="./readme/minetmade.png" alt="Made with love by Arhaan Bahadur" width="40%" />](https://arhaanb.co)
+[<img src="./readme/minetmade.png" alt="Made with love by Arhaan Bahadur" width="20%" />](https://arhaanb.co)
 
 <!-- [<img src="./readme/minet.png" alt="Team MINET" width="80em" />](https://minet.co) -->
