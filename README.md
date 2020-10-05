@@ -10,10 +10,13 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 - ``` yarn ```
 - ``` yarn develop ```
 - The server will start on [localhost:8080](http://localhost:8080)
+- Before deploying your application, remember to change your ```pathPrefix``` in ```gridsome.config.js``` to the directory you are deploying to (eg: '/lens' or '/').
 
 ### Credits
 - Picture by [Darsh Vohra](https://instagram.com/darsh_vohra)
 
 <br>
 
-[<img src="./readme/madewithlove.png" alt="Made with love by Arhaan Bahadur" width="150em" />](https://arhaanb.co)
+[<img src="./readme/madewithlove.png" alt="Made with love by Arhaan Bahadur" width="175em" />](https://arhaanb.co)
+
+[<img src="./readme/minet.png" alt="Team MINET" width="80em" />](https://minet.co)
