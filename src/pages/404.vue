@@ -2,7 +2,14 @@
   <Layout>
     <div class="container">
       <div class="mbtop"></div>
-      <img src="../assets/img/lens.svg" alt="MINET Lens" class="lenslog" draggable="false" />
+      <g-link to="/">
+        <img
+          src="../assets/img/lens.svg"
+          alt="MINET Lens"
+          class="lenslog"
+          draggable="false"
+        />
+      </g-link>
       <div class="mbbtm"></div>
       <h1 class="semi zero four">404</h1>
       <h5 class="desc">
@@ -34,7 +41,7 @@ export default {
 }
 
 .four {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
 }
 
 .mbbtm {
@@ -44,6 +51,7 @@ export default {
 .lenslog {
   width: 13em;
 }
+
 a {
   text-decoration: none;
 }
@@ -57,9 +65,9 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-	}
-	.successmargin {
-		height: 50vh;
-	}
+  }
+  .successmargin {
+    height: 50vh;
+  }
 }
 </style>

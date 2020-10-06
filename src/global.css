@@ -150,7 +150,7 @@ button:disabled {
 	box-shadow: none;
 }
 
-.noselect, br, button, select, img, input, textarea {
+.noselect, br, button, select, img, input, textarea, .footer {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;

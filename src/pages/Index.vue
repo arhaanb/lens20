@@ -185,6 +185,36 @@
         </div>
       </form>
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="six columns">
+          <h6>
+            <a href="//github.com/arhaanb/lens20" target="_blank">
+              <img
+                src="../assets/img/github.svg"
+                alt="GitHub"
+                class="github icon"
+              />
+              View Source</a
+            >
+          </h6>
+        </div>
+        <div class="six columns">
+          <h6 class="right">
+            <a href="//arhaanb.co/" target="_blank">
+              Made with
+              <img
+                src="../assets/img/heart.svg"
+                alt="Heart"
+                class="heart icon"
+              />
+              by Arhaan</a
+            >
+          </h6>
+        </div>
+      </div>
+    </footer>
   </Layout>
 </template>
 
@@ -269,6 +299,41 @@ export default {
 </script>
 
 <style lang="scss">
+footer.footer {
+  background-color: rgba(240, 240, 240, 0.6);
+  border-top: solid 1px rgba(190, 190, 190, 0.8);
+  margin: 0;
+  padding: 0.8em 0;
+  margin-top: 2em;
+  .github {
+    width: 1.5em;
+    margin-bottom: -0.35em;
+  }
+  .heart {
+    width: 1.2em;
+    margin-bottom: -0.2em;
+  }
+  .right {
+    text-align: right;
+  }
+  h6 {
+    margin: 0;
+    font-size: 0.9em;
+    a {
+      color: #222;
+    }
+    a:hover {
+      color: #6699ee;
+    }
+  }
+  @media (max-width: 550px) {
+    h6,
+    .right {
+      text-align: center;
+    }
+  }
+}
+
 .applying {
   margin-bottom: 0.5em;
 }
@@ -276,15 +341,6 @@ export default {
 .red {
   color: rgb(235, 68, 68);
 }
-
-// .check {
-//   input {
-//     margin-right: 0.5em;
-//   }
-//   label {
-//     margin-bottom: -3em;
-//   }
-// }
 
 .check {
   margin: 2em 0;

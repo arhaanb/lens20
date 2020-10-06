@@ -55,7 +55,7 @@ query {
 
 .main {
   margin-left: 42vw;
-  padding: 2em 0;
+  padding-top: 2em;
 }
 
 .sideimg {
