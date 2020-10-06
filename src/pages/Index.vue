@@ -183,9 +183,7 @@
             required
           ></textarea>
 
-          <label for="q4">
-            Please compile your portfolio on google drive and share the link.
-          </label>
+          <label for="q4">Compile your portfolio and share the link.</label>
           <textarea
             v-model="q4"
             id="q4"
