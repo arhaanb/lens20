@@ -17,9 +17,12 @@
         <h5 class="desc">
           Recruitments for this session have been closed. If you applied, you
           will be contacted shortly. If you have any queries, email us at
-          <a href="mailto:minet@themis.in" target="_blank">minet@themis.in</a>,
-          or drop us a message on our instagram account
-          <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
+          <a href="mailto:minet@themis.in" target="_blank" rel="noreferrer"
+            >minet@themis.in</a
+          >, or drop us a message on our instagram account
+          <a href="//instagram.com/minetlens" target="_blank" rel="noreferrer"
+            >@minetlens</a
+          >.
         </h5>
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
@@ -51,21 +54,34 @@
           or drop us a message on our instagram account
           <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
         </p>
-        <label>Name</label>
-        <input type="text" placeholder="Name" v-model="name" required />
-        <label>Email</label>
-        <input type="email" placeholder="Email" v-model="email" required />
-        <label>Phone Number</label>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          v-model="name"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          v-model="email"
+          required
+        />
+        <label for="pnumber">Phone Number</label>
         <input
           type="number"
+          id="pnumber"
           placeholder="Phone Number"
           v-model="phone"
           required
         />
         <div class="row">
           <div class="one-half column">
-            <label>Select Class</label>
-            <select required v-model="class1" class="u-full-width">
+            <label for="class1">Select Class</label>
+            <select required id="class1" v-model="class1">
               <option value="0" selected disabled>Class</option>
               <option value="6">6</option>
               <option value="7">7</option>
@@ -78,8 +94,8 @@
           </div>
 
           <div class="one-half column">
-            <label>Select Section</label>
-            <select required v-model="section" class="u-full-width">
+            <label for="section">Select Section</label>
+            <select required id="section" v-model="section">
               <option value="0" selected disabled>Section</option>
               <option value="A">A</option>
               <option value="B">B</option>
@@ -94,7 +110,6 @@
         <div class="check">
           <h6 class="semi applying">What field are you applying for?</h6>
           <div class="row">
-            <!-- <h5>{{ radio }}</h5> -->
             <div class="six columns">
               <div class="xboxbox">
                 <input
@@ -137,31 +152,51 @@
             >
             <textarea name id></textarea> -->
 
-          <label>
+          <label for="q1">
             What about you makes you stand out and perhaps better than the other
             contenders applying for the same post?
           </label>
-          <textarea v-model="q1" placeholder="Answer" required></textarea>
+          <textarea
+            v-model="q1"
+            id="q1"
+            placeholder="Answer"
+            required
+          ></textarea>
 
-          <label>
+          <label for="q2">
             What are the qualities of an ideal
             Photographer/Cinematographer/Director? (fill this for the post
             you're applying for)
           </label>
-          <textarea v-model="q2" placeholder="Answer" required></textarea>
+          <textarea
+            v-model="q2"
+            id="q2"
+            placeholder="Answer"
+            required
+          ></textarea>
 
-          <label>How would you describe your style of work?</label>
-          <textarea v-model="q3" placeholder="Answer" required></textarea>
+          <label for="q3">How would you describe your style of work?</label>
+          <textarea
+            v-model="q3"
+            id="q3"
+            placeholder="Answer"
+            required
+          ></textarea>
 
-          <label>
+          <label for="q4">
             Please compile your portfolio on google drive and share the link.
           </label>
-          <textarea v-model="q4" placeholder="Answer" required></textarea>
+          <textarea
+            v-model="q4"
+            id="q4"
+            placeholder="Answer"
+            required
+          ></textarea>
 
-          <label>
+          <label for="q5">
             Do you have any creative work experience? If yes, please mention.
           </label>
-          <textarea v-model="q5" placeholder="Answer"></textarea>
+          <textarea v-model="q5" id="q5" placeholder="Answer"></textarea>
         </div>
 
         <h6 v-if="classerror" class="semi red zero">
@@ -190,7 +225,11 @@
       <div class="container">
         <div class="six columns">
           <h6>
-            <a href="//github.com/arhaanb/lens20" target="_blank">
+            <a
+              href="//github.com/arhaanb/lens20"
+              rel="noreferrer"
+              target="_blank"
+            >
               <img
                 src="../assets/img/github.svg"
                 alt="GitHub"
@@ -202,7 +241,7 @@
         </div>
         <div class="six columns">
           <h6 class="right">
-            <a href="//arhaanb.co/" target="_blank">
+            <a href="//arhaanb.co/" rel="noreferrer" target="_blank">
               Made with
               <img
                 src="../assets/img/heart.svg"
