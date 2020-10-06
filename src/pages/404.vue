@@ -44,7 +44,6 @@ export default {
 .lenslog {
   width: 13em;
 }
-
 a {
   text-decoration: none;
 }
