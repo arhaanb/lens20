@@ -10,35 +10,55 @@
       />
       <div class="mbbtm"></div>
       <h5 class="sub">Recruitments</h5>
-      <div v-if="over">
+      <div v-if="over" class="notform">
         <h1 class="semi" style="margin: 1em 0 0.2em 0">
           Let's Make Beautiful Pictures.
         </h1>
-        <h5 class="desc">
+        <!-- <h5 class="desc">
           Recruitments for this session have been closed. If you applied, you
           will be contacted shortly. If you have any queries, email us at
-          <a href="mailto:minet@themis.in" target="_blank" rel="noreferrer"
+          <a
+            class="link"
+            rel="noreferrer"
+            href="mailto:minet@themis.in"
+            target="_blank"
             >minet@themis.in</a
           >, or drop us a message on our instagram account
-          <a href="//instagram.com/minetlens" target="_blank" rel="noreferrer"
+          <a
+            class="link"
+            href="//instagram.com/minetlens"
+            rel="noreferrer"
+            target="_blank"
             >@minetlens</a
           >.
-        </h5>
+        </h5> -->
+        <h4>Coming soon.</h4>
         <a href="//minet.co">
-          <button class="cool minetbtn button-primary">Team MINET</button>
+          <button class="ghost">Team MINET</button>
         </a>
         <div class="successmargin"></div>
       </div>
-      <div v-if="submitted && !over">
+      <div v-if="submitted && !over" class="notform">
         <h1 class="semi" style="margin: 1em 0 0.2em 0">
           Let's Make Beautiful Pictures.
         </h1>
         <h5 class="desc">
           Thank you for applying to MINET Lens. We will contact you regarding
           your application shortly. If you have any queries, email us at
-          <a href="mailto:minet@themis.in" target="_blank">minet@themis.in</a>,
-          or drop us a message on our instagram account
-          <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
+          <a
+            class="link"
+            href="mailto:minet@themis.in"
+            rel="noreferrer"
+            target="_blank"
+            >minet@themis.in</a
+          >, or drop us a message on our instagram account
+          <a
+            class="link"
+            href="//instagram.com/minetlens"
+            rel="noreferrer"
+            target="_blank"
+            >@minetlens</a
+          >.
         </h5>
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
@@ -50,9 +70,20 @@
           MINET Lens is The Mother's International School's photography club.
           Fill out the form if you are interested in joining. If you have any
           queries, email us at
-          <a href="mailto:minet@themis.in" target="_blank">minet@themis.in</a>,
-          or drop us a message on our instagram account
-          <a href="//instagram.com/minetlens" target="_blank">@minetlens</a>.
+          <a
+            class="link"
+            href="mailto:minet@themis.in"
+            rel="noreferrer"
+            target="_blank"
+            >minet@themis.in</a
+          >, or drop us a message on our instagram account
+          <a
+            class="link"
+            href="//instagram.com/minetlens"
+            rel="noreferrer"
+            target="_blank"
+            >@minetlens.</a
+          >
         </p>
         <label for="name">Name</label>
         <input
@@ -211,7 +242,7 @@
           </ul>
         </div>
         <div class="anti-center">
-          <button class="button-primary" :disabled="loading">
+          <button :disabled="loading">
             <span v-if="!loading">Submit</span>
             <span v-if="loading">Loading</span>
           </button>
@@ -219,6 +250,7 @@
       </form>
     </div>
 
+    <div v-if="submitted || over" class="marginover"></div>
     <footer class="footer">
       <div class="container">
         <div class="six columns">
@@ -336,6 +368,10 @@ export default {
 </script>
 
 <style lang="scss">
+.notform {
+  height: 80vh;
+}
+
 footer.footer {
   background-color: rgba(240, 240, 240, 0.6);
   border-top: solid 1px rgba(190, 190, 190, 0.8);

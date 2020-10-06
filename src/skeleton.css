@@ -204,13 +204,33 @@ p {
 	margin-top: 0;
 }
 
-a {
-	color: rgb(62, 125, 235);
+a, a.link {
+	color: rgb(30, 75, 153);
+	position: relative;
+	/* border-bottom: solid 1px rgb(30, 75, 153); */
+	/* text-decoration: underline !important; */
 }
 
-a:hover {
-	color:  rgb(33, 79, 158);
+a.link:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 60%;
+	left: -0.1em;
+	right: -0.1em;
+	bottom: 0;
+	transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+	background-color: #5c94e93a;
 }
+
+a.link:hover:after {
+	top: 0%;
+}
+
+/* a:hover {
+	color:  #69e;
+	border: none;
+} */
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
 	display: inline-block;
@@ -218,8 +238,7 @@ a:hover {
 	padding: 0 30px;
 	color: #555;
 	text-align: center;
-	font-size: 12px;
-	font-weight: 600;
+	font-size: 11px;
 	line-height: 38px;
 	letter-spacing: .1rem;
 	text-transform: uppercase;
