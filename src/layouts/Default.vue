@@ -1,26 +1,24 @@
 <template>
   <div class="layout">
-		<ClientOnly>
-			<div class="sidenav">
-				<img
-					src="../assets/img/favicon.svg"
-					alt="MINET Lens Logo"
-					class="logo"
-					draggable="false"
-				/>
+    <div class="sidenav">
+      <img
+        src="../assets/img/favicon.svg"
+        alt="MINET Lens Logo"
+        class="logo"
+        draggable="false"
+      />
 
-				<g-image
-					src="../assets/img/darsh.jpg"
-					alt="Bird by Darsh Vohra"
-					class="sideimg"
-					draggable="false"
-				/>
-			</div>
+      <g-image
+        src="../assets/img/darsh.jpg"
+        alt="Bird by Darsh Vohra"
+        class="sideimg"
+        draggable="false"
+      />
+    </div>
 
-			<div class="main">
-				<slot />
-			</div>
-		<ClientOnly/>
+    <div class="main">
+      <slot />
+    </div>
   </div>
 </template>
 
