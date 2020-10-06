@@ -14,6 +14,13 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 - The server will start on [localhost:8080](http://localhost:8080)
 - Before deploying the application, remember to change the ```pathPrefix``` in ```gridsome.config.js``` to the directory you are deploying to (eg: '/lens' or '/').
 
+### Lighthouse analysis
+
+<img src="./readme/stats.png" alt="Lighthouse Stats" width="60%" />
+
+Poggers 😄 Also it's responsive and stuff.
+
+
 ### Credits
 - Picture by [Darsh Vohra](https://instagram.com/darsh_vohra)
 
