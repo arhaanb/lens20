@@ -11,7 +11,7 @@
       <div class="mbbtm"></div>
       <h5 class="sub">Recruitments</h5>
       <div v-if="over" class="notform">
-        <h1 class="semi" style="margin: 1em 0 0.2em 0">
+        <h1 class="semi" style="margin: 1em 0 0.2em 0;">
           Let's Make Beautiful Pictures.
         </h1>
         <!-- <h5 class="desc">
@@ -39,7 +39,7 @@
         <div class="successmargin"></div>
       </div>
       <div v-if="submitted && !over" class="notform">
-        <h1 class="semi" style="margin: 1em 0 0.2em 0">
+        <h1 class="semi" style="margin: 1em 0 0.2em 0;">
           Let's Make Beautiful Pictures.
         </h1>
         <h5 class="desc">
@@ -50,15 +50,19 @@
             href="mailto:minet@themis.in"
             rel="noreferrer"
             target="_blank"
-            >minet@themis.in</a
-          >, or drop us a message on our instagram account
+          >
+            minet@themis.in
+          </a>
+          , or drop us a message on our instagram account
           <a
             class="link"
             href="//instagram.com/minetlens"
             rel="noreferrer"
             target="_blank"
-            >@minetlens</a
-          >.
+          >
+            @minetlens
+          </a>
+          .
         </h5>
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
@@ -75,15 +79,18 @@
             href="mailto:minet@themis.in"
             rel="noreferrer"
             target="_blank"
-            >minet@themis.in</a
-          >, or drop us a message on our instagram account
+          >
+            minet@themis.in
+          </a>
+          , or drop us a message on our instagram account
           <a
             class="link"
             href="//instagram.com/minetlens"
             rel="noreferrer"
             target="_blank"
-            >@minetlens.</a
           >
+            @minetlens.
+          </a>
         </p>
         <label for="name">Name</label>
         <input
@@ -231,11 +238,11 @@
         <h6 v-if="classerror" class="semi red zero">
           Please choose your class
         </h6>
-        <h6 v-if="fielderror" class="semi red" style="margin-bottom: 0.5em">
+        <h6 v-if="fielderror" class="semi red" style="margin-bottom: 0.5em;">
           Please pick a field
         </h6>
         <div v-if="errors.length">
-          <ul class="zero" style="margin-bottom: 0.5em">
+          <ul class="zero" style="margin-bottom: 0.5em;">
             <li class="zero red" v-for="error in errors" :key="error">
               {{ error }}
             </li>
@@ -265,8 +272,8 @@
                 alt="GitHub"
                 class="github icon"
               />
-              View Source</a
-            >
+              View Source
+            </a>
           </h6>
         </div>
         <div class="six columns">
@@ -278,8 +285,8 @@
                 alt="Heart"
                 class="heart icon"
               />
-              by Arhaan</a
-            >
+              by Arhaan
+            </a>
           </h6>
         </div>
       </div>
@@ -288,59 +295,59 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 export default {
   metaInfo: {
-    title: "Recruitments",
+    title: 'Recruitments',
   },
   data: () => ({
     errors: [],
-    over: true,
+    over: false,
     submitted: false,
     loading: false,
     classerror: false,
     fielderror: false,
-    name: "",
-    email: "",
-    phone: "",
+    name: '',
+    email: '',
+    phone: '',
     class1: 0,
     section: 0,
     radio: {
       photography: false,
       direction: false,
     },
-    q1: "",
-    q2: "",
-    q3: "",
-    q4: "",
-    q5: "",
+    q1: '',
+    q2: '',
+    q3: '',
+    q4: '',
+    q5: '',
   }),
   methods: {
     async addUser(e) {
-      e.preventDefault();
-      this.loading = true;
-      this.errors = [];
+      e.preventDefault()
+      this.loading = true
+      this.errors = []
 
       if (this.errors.length > 0) {
-        this.loading = false;
+        this.loading = false
       }
 
       if (this.class1 == 0 || this.section == 0) {
         // this.classerror = true;
-        this.errors.push("Please select your class.");
-        this.loading = false;
+        this.errors.push('Please select your class.')
+        this.loading = false
       }
 
       if (this.radio.photography == false && this.radio.direction == false) {
         // this.fielderror = true;
-        this.errors.push("Please choose a field.");
-        this.loading = false;
+        this.errors.push('Please choose a field.')
+        this.loading = false
       } else {
         if (this.errors.length > 0) {
-          this.loading = false;
+          this.loading = false
         } else {
           await axios
-            .post("https://lensapi.arhaanb.co/lens", {
+            .post('https://mismunapi.herokuapp.com/lens', {
               name: this.name,
               email: this.email,
               phone: this.phone,
@@ -354,17 +361,17 @@ export default {
               q5: this.q5,
             })
             .then((response) => {
-              const data = response.data;
+              const data = response.data
               // console.log(data);
-              this.msg = data.msg;
-            });
-          this.loading = false;
-          this.submitted = true;
+              this.msg = data.msg
+            })
+          this.loading = false
+          this.submitted = true
         }
       }
     },
   },
-};
+}
 </script>
 
 <style lang="scss">
@@ -428,12 +435,12 @@ footer.footer {
   align-items: center;
   label {
     margin-top: -1.1em;
-    font-family: "europa-regular";
+    font-family: 'europa-regular';
   }
 }
 
 .title {
-  font-family: "virgo 01";
+  font-family: 'virgo 01';
   color: #6699ee;
   text-align: left;
   font-size: 2.5em;
@@ -454,7 +461,7 @@ footer.footer {
   letter-spacing: 0.1em;
   color: rgb(63, 63, 63);
   font-size: 1.2em;
-  font-family: "europa";
+  font-family: 'europa';
   // font-weight: 400;
 }
 
