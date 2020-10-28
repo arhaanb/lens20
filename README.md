@@ -1,4 +1,4 @@
-# [<img src="./readme/title.png" alt="MINET Lens Recruitments" width="25%" />](https://minet.co/lens)
+# [<img src="./readme/title.svg" alt="MINET Lens Recruitments" width="25%" />](https://minet.co/lens)
 
 > MINET Lens 2020 Recruitments
 
@@ -25,6 +25,6 @@ Poggers 😄
 
 <br>
 
-[<img src="./readme/minetmade.png" alt="Made with love by Arhaan Bahadur" width="20%" />](https://arhaanb.co)
+[<img src="./readme/minetmade.svg" alt="Made with love by Arhaan Bahadur" width="20%" />](https://arhaanb.co)
 
 <!-- [<img src="./readme/minet.png" alt="Team MINET" width="80em" />](https://minet.co) -->
