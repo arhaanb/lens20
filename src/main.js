@@ -18,7 +18,7 @@ export default function (Vue, { router, head, isClient }) {
 
 	head.meta.push({
 		name: 'og:image',
-		content: 'https://minet.co/lens/lens.png'
+		content: 'https://minet.co/favicon.png'
 	})
 
 	// Set default layout as a global component
