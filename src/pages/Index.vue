@@ -51,18 +51,19 @@
             rel="noreferrer"
             target="_blank"
           >
-            minet@themis.in
+            <span>minet@themis.in</span>
           </a>
-          , or drop us a message on our instagram account
+          <span>,</span>
+          or drop us a message on our instagram account
           <a
             class="link"
             href="//instagram.com/minetlens"
             rel="noreferrer"
             target="_blank"
           >
-            @minetlens
+            <span>@minetlens</span>
           </a>
-          .
+          <span>.</span>
         </h5>
         <a href="//minet.co">
           <button class="cool minetbtn button-primary">Team MINET</button>
@@ -80,17 +81,19 @@
             rel="noreferrer"
             target="_blank"
           >
-            minet@themis.in
+            <span>minet@themis.in</span>
           </a>
-          , or drop us a message on our instagram account
+          <span>,</span>
+          or drop us a message on our instagram account
           <a
             class="link"
             href="//instagram.com/minetlens"
             rel="noreferrer"
             target="_blank"
           >
-            @minetlens.
+            <span>@minetlens</span>
           </a>
+          <span>.</span>
         </p>
         <label for="name">Name</label>
         <input
