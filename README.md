@@ -3,6 +3,8 @@
 [<img src="./readme/title.png" alt="MINET Lens Recruitments" width="25%" />](https://minet.co/lens)
 <img src="./readme/line.png" alt="line lol" width="100%" />
 
+> MINET Lens 2020 Recruitments
+
 The official Photography and AV department of The Mother's International School. MINET Lens strives to be a place where people come together to produce art in the form of photography and videography. Fill out the form if you are interested in joining. If you have any queries, email us at [minet@themis.in](mailto:minet@themis.in), or drop us a message on our Instagram account [@minetlens](https://instagram.com/minetlens).
 
 ### View the deployed site [here](https://minet.co/lens)
@@ -18,7 +20,7 @@ This website was built using [Gridsome](https://gridsome.org/) and [VueJS](https
 
 <img src="./readme/stats.png" alt="Lighthouse Stats" width="60%" />
 
-Poggers 😄 Also it's responsive and stuff.
+Poggers 😄
 
 
 ### Credits
