@@ -350,7 +350,7 @@ export default {
           this.loading = false
         } else {
           await axios
-            .post('https://mismunapi.herokuapp.com/lens', {
+            .post('https://newmismunapi.herokuapp.com/lens', {
               name: this.name,
               email: this.email,
               phone: this.phone,
