@@ -1,14 +1,1 @@
-<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="1614" height="1614" viewBox="0 0 1614 1614">
-  <g id="Ellipse_1" data-name="Ellipse 1" fill="#fff" stroke="#707070" stroke-width="1">
-    <circle cx="807" cy="807" r="807" stroke="none"/>
-    <circle cx="807" cy="807" r="806.5" fill="none"/>
-  </g>
-  <g id="Group_1" data-name="Group 1" transform="translate(-29 -25)">
-    <rect id="Rectangle_2" data-name="Rectangle 2" width="79.995" height="399.975" rx="39.997" transform="translate(663.889 398.953) rotate(-30)" fill="#69e"/>
-    <rect id="Rectangle_3" data-name="Rectangle 3" width="77" height="400" rx="38.5" transform="translate(374 772) rotate(-90)" fill="#69e"/>
-    <rect id="Rectangle_4" data-name="Rectangle 4" width="79.995" height="399.975" rx="39.998" transform="translate(541.477 1200.418) rotate(-150)" fill="#69e"/>
-    <rect id="Rectangle_5" data-name="Rectangle 5" width="79.995" height="399.975" rx="39.997" transform="translate(1008.799 1265.355) rotate(150)" fill="#69e"/>
-    <rect id="Rectangle_6" data-name="Rectangle 6" width="79.995" height="399.975" rx="39.998" transform="translate(1116.867 476.228) rotate(30)" fill="#69e"/>
-    <rect id="Rectangle_7" data-name="Rectangle 7" width="77" height="400" rx="38.5" transform="translate(898 978) rotate(-90)" fill="#69e"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Component_2_1" width="1614" height="1614" data-name="Component 2 – 1" viewBox="0 0 1614 1614"><g id="Ellipse_1" fill="#fff" stroke="#707070" stroke-width="1" data-name="Ellipse 1"><circle cx="807" cy="807" r="807" stroke="none"/><circle cx="807" cy="807" r="806.5" fill="none"/></g><g id="Group_1" data-name="Group 1" transform="translate(-29 -25)"><rect id="Rectangle_2" width="79.995" height="399.975" fill="#69e" data-name="Rectangle 2" rx="39.997" transform="translate(663.889 398.953) rotate(-30)"/><rect id="Rectangle_3" width="77" height="400" fill="#69e" data-name="Rectangle 3" rx="38.5" transform="translate(374 772) rotate(-90)"/><rect id="Rectangle_4" width="79.995" height="399.975" fill="#69e" data-name="Rectangle 4" rx="39.998" transform="translate(541.477 1200.418) rotate(-150)"/><rect id="Rectangle_5" width="79.995" height="399.975" fill="#69e" data-name="Rectangle 5" rx="39.997" transform="translate(1008.799 1265.355) rotate(150)"/><rect id="Rectangle_6" width="79.995" height="399.975" fill="#69e" data-name="Rectangle 6" rx="39.998" transform="translate(1116.867 476.228) rotate(30)"/><rect id="Rectangle_7" width="77" height="400" fill="#69e" data-name="Rectangle 7" rx="38.5" transform="translate(898 978) rotate(-90)"/></g></svg>
