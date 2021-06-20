@@ -1,16 +1,23 @@
 {
-  "name": "lenswoah",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.2",
-    "axios": "^0.20.0",
-    "gridsome": "^0.7.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2"
-  }
+	"name": "lenswoah",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore"
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"trailingComma": "none"
+	},
+	"dependencies": {
+		"@gridsome/plugin-google-analytics": "^0.1.2",
+		"axios": "^0.20.0",
+		"gridsome": "^0.7.0",
+		"node-sass": "^4.14.1",
+		"sass-loader": "^10.0.2"
+	}
 }

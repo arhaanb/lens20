@@ -1,14 +1,14 @@
 @font-face {
-	font-family: "europa";
-	src: url("./assets/fonts/europa-bold.ttf");
+	font-family: 'europa';
+	src: url('./assets/fonts/europa-bold.ttf');
 	/* font-weight: normal; */
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "europa-regular";
-	src: url("./assets/fonts/europa-regular.ttf");
+	font-family: 'europa-regular';
+	src: url('./assets/fonts/europa-regular.ttf');
 	/* font-weight: normal; */
 	font-style: normal;
 	font-display: swap;
@@ -51,7 +51,7 @@ a {
 }
 
 .layout {
-	font-family: "europa-regular", 'sans-serif';
+	font-family: 'europa-regular', 'sans-serif';
 	color: #222;
 }
 
@@ -63,17 +63,17 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
 	width: 7px;
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 7px;
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
 }
 
 ::-moz-selection {
@@ -86,7 +86,7 @@ a {
 	background: rgba(80, 142, 235, 0.281);
 }
 
-input:not([type="checkbox"]), textarea, select, option {
+input:not([type='checkbox']), textarea, select, option {
 	min-width: 100%;
 	max-width: 100%;
 	font-family: 'europa-regular', 'sans-serif';

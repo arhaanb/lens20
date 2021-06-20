@@ -1,6 +1,7 @@
 module.exports = {
 	siteName: 'MINET Lens',
-	siteDescription: "MINET Lens is The Mother's International School's photography department.",
+	siteDescription:
+		"MINET Lens is The Mother's International School's photography department.",
 	siteUrl: 'https://minet.co/lens',
 	titleTemplate: '%s | MINET Lens',
 	pathPrefix: '/lens',
@@ -21,6 +22,6 @@ module.exports = {
 			options: {
 				id: 'UA-175897213-1'
 			}
-		},
-	],
+		}
+	]
 }
